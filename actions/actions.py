@@ -20,7 +20,7 @@ path = os.getcwd()
 
 url =  "https://api.openai.com/v1/completions"
 
-key = "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"
+key = "Your api key"
 
 headers = {"Authorization": f"Bearer {key}"}
 
