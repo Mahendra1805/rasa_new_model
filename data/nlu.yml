@@ -1,0 +1,207 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: Enter_the_email_ID
+  examples: |
+    - my mail ID is Jhon@abc.com
+    - my registered mail id is Jhon@abc.com
+    - jhon@abc.com
+    - jack@abc.com
+    - my mail ID is Jack@abc.com
+    - my registered mail id is Jack@abc.com
+- intent: Passcode
+  examples: |
+    - 1234
+    - my passcode is 1234
+# - intent: Account_Passcode
+#   examples: |
+#     - 654321
+#     - my passcode is 654321
+# - intent: Reward_Passcode
+#   examples: |
+#     - 01010
+#     - my passcode is 01010
+# - intent: Address_Passcode
+#   examples: |
+#     - 165243
+#     - my passcode is 165243
+- intent: Enter_the_New_Password
+  examples: |
+    - jhon123
+    - jack123
+- intent: password_reset
+  examples: |
+    - How do I reset my password?
+    - I forgot my password. What do I do now?
+    - Can you help me reset my password?
+    - My password is not working. How can I reset it?
+    - I need to change my password. How can I do that?
+    - Can you guide me through the process of updating my password?
+    - I think my account has been hacked. How can I reset my password?
+    - I received a notification to update my password. How do I do that?
+    - Is it possible to reset my password without losing my data?
+    - What are the requirements for creating a new password?
+    - How often should I update my password for security purposes?
+    - What should I do if I receive an error message while resetting my password?
+    - Can I use a previously used password when updating my password?
+    - Can I reset my password using my phone number or email address?
+    - How long does it take for the password reset to take effect?
+    - i need to reset my password
+    - i want to update my password
+- intent: account_unlock
+  examples: |
+    - My account is locked. How can I unlock it?
+    - I am unable to access my account because it's locked. What should I do?
+    - Can you help me unlock my account?
+    - Why is my account locked and how can I unlock it?
+    - I entered the wrong password multiple times and now my account is locked. What do I do?
+    - How long will it take to unlock my account?
+    - What information do I need to provide to unlock my account?
+    - I am locked out of my account. Can you assist me in unlocking it?
+    - I received a notification that my account has been locked. How can I unlock it?
+    - Is there a way to prevent my account from getting locked in the future?
+    - Can I unlock my account without losing my data?
+    - What should I do if I am unable to unlock my account?
+    - Can you check why my account was locked and help me unlock it?
+    - How can I avoid getting my account locked in the first place?
+    - What security measures can I take to prevent my account from being locked
+- intent: reward_status
+  examples: |
+    - Can you tell me the status of my reward?
+    - I want to know the status of my reward. Can you help me?
+    - How can I check the status of my reward?
+    - Is there any update on the status of my reward?
+    - I'm checking on the status of my reward. Can you assist me?
+    - Why haven't I received my reward yet?
+    - Can you check if my reward has been processed?
+    - What is the estimated delivery date of my reward?
+    - My reward status says "processing". How long will it take to process?
+    - How will I be notified once my reward is ready for redemption?
+    - I received a notification that my reward has been shipped. How can I track it?
+    - Can you confirm that my reward has been shipped?
+    - What should I do if I haven't received my reward yet?
+    - My reward status says "delivered", but I haven't received it yet. What should I do?
+    - Is there a way to expedite the processing of my reward?
+- intent: enter_reward_id
+  examples: |
+    - my reward id num is A101
+    - A101
+- intent: address_update
+  examples: |
+    - I need to update my address. How can I do that?
+    - My address has changed. Can you help me update it in your system?
+    - How do I change my address in my account?
+    - Is there a way to update my address online?
+    - Can you confirm if my address has been updated in your system?
+    - I want to make sure that my new address is updated in my account. Can you check that for me?
+    - I need to update my address for an upcoming delivery. How can I do that?
+    - What information do I need to provide to update my address?
+    - Can I update my address for all my future orders?
+    - How long does it take for my address update to reflect in your system?
+    - I have multiple addresses on file. How do I set my new address as my default shipping address?
+    - Can I update my address while my order is in transit?
+    - Will my previous address still be visible in your system after I update my address?
+    - How can I update my address if I don't have access to my account?
+    - Is there a way to confirm if my package will be delivered to my new address?
+- intent: enter_house_num
+  examples: |
+    - house no.121
+    - 121
+- intent: enter_street_name
+  examples: |
+    - street name is park avenue
+    - park avenue
+- intent: enter_landmark
+  examples: |
+    - land mark is near central park
+    - near central park
+- intent: enter_city_name
+  examples: |
+    - city name is new york
+    - new york
+- intent: enter_pincode
+  examples: |
+    - pincode is NY10017
+    - NY10017

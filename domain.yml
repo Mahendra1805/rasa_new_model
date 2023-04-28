@@ -1,0 +1,110 @@
+version: '3.1'
+intents:
+- Enter_the_New_Password
+- Enter_the_email_ID
+- Passcode
+- account_unlock
+- address_update
+- affirm
+- bot_challenge
+- deny
+- enter_city_name
+- enter_house_num
+- enter_landmark
+- enter_pincode
+- enter_reward_id
+- enter_street_name
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+- password_reset
+- reward_status
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_botgreet:
+  - text: Hello I am your virtual Support Assistant, How may I help you
+  utter_Enter_the_emailid:
+  - text: pls enter your email id
+  utter_password_Passcode:
+  - text: enter the passcode sent to your registered mail id regarding password reset
+  utter_account_passcode:
+  - text: enter the passcode sent to your registered mail id regarding account unlock
+  utter_reward_Passcode:
+  - text: enter the passcode sent to your registered mail id regarding reward status
+  utter_address_Passcode:
+  - text: enter the passcode sent to your registered mail id regarding address updation
+  utter_enter_new_password:
+  - text: enter the new password
+  utter_pasword_reset:
+  - text: your password has been reset
+  utter_ask:
+  - text: is there anything to help you with
+  utter_end:
+  - text: have a nice day
+  utter_account_unlock:
+  - text: your account been locked due too many times typing wrong password, now your account has been unlocked
+  utter_response:
+  - text: apologies for the inconveinence, pls provide me with some details to help you with {reply}
+  utter_error_message:
+  - text: I'm sorry, there was an error processing your request. Please try again later.
+  utter_enter_reward_id:
+  - text: can you pls enter your reward id, so that i can check the status of your reward
+  utter_reward_dispatched:
+  - text: your reward has been dispatched, it will reach your registered address in 3 business days
+  utter_enter_house_num:
+  - text: please enter the house number
+  utter_enter_street:
+  - text: please enter street name
+  utter_enter_landmark:
+  - text: please enter the landmark
+  utter_enter_city:
+  - text: please enter the city name
+  utter_enter_the_pincode:
+  - text: please enterthe pincode number
+  utter_updated_address:
+  - text: your address has been updated, all the rewards which are dispatched will be arrived at the updated address
+actions:
+- utter_botgreet
+- utter_Enter_the_emailid
+- utter_pasword_reset
+- utter_ask
+- utter_enter_new_password
+- utter_password_Passcode
+- utter_end
+- action_call_openai
+- utter_account_passcode
+- utter_reward_Passcode
+- utter_address_Passcode
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_account_unlock
+- utter_enter_reward_id
+- utter_reward_dispatched
+- utter_enter_house_num
+- utter_enter_street
+- utter_enter_landmark
+- utter_enter_city
+- utter_enter_the_pincode
+- utter_updated_address
+- utter_response
+- utter_error_message
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,102 @@
+version: "3.1"
+
+stories:
+
+- story: password reset
+  steps:
+  - intent: greet
+  - action: utter_botgreet
+  - intent: password_reset
+  - action: action_call_openai
+  - action: utter_Enter_the_emailid
+  - intent: Enter_the_email_ID
+  - action: utter_password_Passcode
+  - intent: Passcode
+  - action: utter_enter_new_password
+  - intent: Enter_the_New_Password
+  - action: utter_pasword_reset 
+  - action: utter_ask
+  - intent: deny
+  - action: utter_end
+  
+
+
+- story: account unlock
+  steps:
+  - intent: greet
+  - action: utter_botgreet
+  - intent: account_unlock
+  - action: action_call_openai
+  - action: utter_Enter_the_emailid
+  - intent: Enter_the_email_ID
+  - action: utter_account_passcode
+  - intent: Passcode
+  - action: utter_account_unlock
+  - action: utter_ask
+  - intent: deny
+  - action: utter_end
+  
+
+
+- story: reward status
+  steps:
+  - intent: greet
+  - action: utter_botgreet
+  - intent: reward_status
+  - action: action_call_openai
+  - action: utter_Enter_the_emailid
+  - intent: Enter_the_email_ID
+  - action: utter_reward_Passcode
+  - intent: Passcode
+  - action: utter_enter_reward_id
+  - intent: enter_reward_id
+  - action: utter_reward_dispatched
+  - action: utter_ask
+  - intent: deny
+  - action: utter_end
+
+
+- story: address update
+  steps:
+  - intent: greet
+  - action: utter_botgreet
+  - intent: address_update
+  - action: action_call_openai
+  - action: utter_Enter_the_emailid
+  - intent: Enter_the_email_ID
+  - action: utter_address_Passcode
+  - intent: Passcode 
+  - action: utter_enter_house_num
+  - intent: enter_house_num
+  - action: utter_enter_street
+  - intent: enter_street_name
+  - action: utter_enter_landmark
+  - intent: enter_landmark
+  - action: utter_enter_city
+  - intent: enter_city_name
+  - action: utter_enter_the_pincode
+  - intent: enter_pincode
+  - action: utter_updated_address
+  - action: utter_ask
+  - intent: deny
+  - action: utter_end
+
+
+
+
+
+# - story: interactive_story_1
+#   steps:
+#   - intent: greet
+#   - action: utter_botgreet
+#   - intent: password_reset
+#   - action: utter_Enter_the_emailid
+#   - intent: Enter_the_email_ID
+#   - action: utter_password_Passcode
+#   - intent: Password_Passcode
+#   - action: utter_enter_new_password
+#   - intent: Enter_the_New_Password
+#   - action: utter_pasword_reset
+#   - action: utter_ask
+#   - intent: deny
+#   - action: utter_end
